@@ -26,11 +26,16 @@
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
+              echo "<table class='table table-striped'>";
+              echo "<tr><th>編號</th><th>馬路消息</th><th>張貼日期</th></tr>";
               while($row = $result->fetch_assoc()) {
-                echo  "id: "   . $row["id"] . 
-                      "News: " . $row["news"] . 
-                      "Pdate:" . $row["pdate"] . "<br>";
+                echo "<tr>";
+                echo  "<td>" . $row["id"] .   "</td>" .
+                      "<td>" . $row["news"] . "</td>" . 
+                      "<td>" . $row["pdate"] ."</td>";
+                echo "</tr>";
               }
+              echo "</table>";
             } else {
               echo "0 results";
             }

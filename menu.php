@@ -23,9 +23,9 @@
             My Videos
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Add Video List</a></li>
-            <li><a class="dropdown-item" href="#">Add Video</a></li>
-            <li><a class="dropdown-item" href="#">List Videos</a></li>
+            <li><a class="dropdown-item" href="addvideolist.php">Add Video List</a></li>
+            <li><a class="dropdown-item" href="addvideo.php">Add Video</a></li>
+            <li><a class="dropdown-item" href="videos.php">List Videos</a></li>
           </ul>
         </li>
       </ul>
